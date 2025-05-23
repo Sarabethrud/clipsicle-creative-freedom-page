@@ -90,7 +90,7 @@ const RiskReversal = () => {
                   
                   <div className="flex items-baseline mb-6">
                     <span className="text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                      $2,997
+                      $1,497
                     </span>
                     <span className="text-xl text-gray-600 ml-2">/month</span>
                   </div>

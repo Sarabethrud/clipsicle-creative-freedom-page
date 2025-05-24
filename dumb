@@ -1,0 +1,16 @@
+# My GitHub Pages Site
+
+This repository will be used to host a static website using GitHub Pages.
+
+## Branches
+- `main`: Source code or project files
+- `gh-pages`: Deployed website content (GitHub Pages)
+
+## Getting Started
+
+To publish your site:
+1. Create a `gh-pages` branch
+2. Add static HTML/CSS/JS content (e.g., `index.html`)
+3. Go to **Settings > Pages**, and set the source to `gh-pages` branch
+
+Happy building!

@@ -76,10 +76,10 @@ const CallToAction = () => {
                   <Play className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Start Your Free Trial
+                  Get Started
                 </h3>
                 <p className="text-gray-600">
-                  Get your first video edited for free. No credit card required.
+                  Ready to transform your content? Let's begin your journey.
                 </p>
               </div>
               
@@ -111,7 +111,7 @@ const CallToAction = () => {
                   size="lg" 
                   className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
-                  Get My Free Video Edit
+                  Get Started Now
                 </Button>
                 
                 <p className="text-sm text-gray-500 text-center">

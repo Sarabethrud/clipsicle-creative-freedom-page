@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Zap, BarChart, Handshake } from "lucide-react";
 
@@ -39,8 +38,11 @@ const ValueProposition = () => {
             <img 
               src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
               alt="Clipsicle Logo" 
-              className="w-8 h-8 mr-3 object-contain"
-              style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
+              className="w-8 h-8 mr-3"
+              style={{ 
+                filter: 'brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(7151%) hue-rotate(318deg) brightness(90%) contrast(118%)',
+                mixBlendMode: 'multiply'
+              }}
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Clipsicle
@@ -98,12 +100,15 @@ const ValueProposition = () => {
             Not Just Editing. A Complete Content Engine.
           </h3>
           <div className="inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-0.5 rounded-full">
-            <div className="bg-white px-8 py-3 rounded-full flex items-center justify-center gap-3">
+            <div className="bg-white px-8 py-3 rounded-full flex items-center gap-3">
               <img 
                 src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
                 alt="Clipsicle Logo" 
-                className="w-5 h-5 object-contain"
-                style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
+                className="w-5 h-5"
+                style={{ 
+                  filter: 'brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(7151%) hue-rotate(318deg) brightness(90%) contrast(118%)',
+                  mixBlendMode: 'multiply'
+                }}
               />
               <p className="text-lg font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 www.clipsicle.com

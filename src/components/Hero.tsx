@@ -19,8 +19,11 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
             alt="Clipsicle Logo" 
-            className="w-12 h-12 mr-4 object-contain"
-            style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
+            className="w-16 h-16 mr-4"
+            style={{ 
+              filter: 'brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(7151%) hue-rotate(318deg) brightness(90%) contrast(118%)',
+              mixBlendMode: 'multiply'
+            }}
           />
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
             Clipsicle

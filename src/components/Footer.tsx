@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12 px-4">
@@ -10,8 +9,11 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
                 alt="Clipsicle Logo" 
-                className="w-8 h-8 mr-3 object-contain"
-                style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
+                className="w-8 h-8 mr-3"
+                style={{ 
+                  filter: 'brightness(0) saturate(100%) invert(84%) sepia(61%) saturate(6078%) hue-rotate(295deg) brightness(104%) contrast(93%)',
+                  mixBlendMode: 'normal'
+                }}
               />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
                 Clipsicle

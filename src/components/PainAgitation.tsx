@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, DollarSign, TrendingDown, AlertTriangle } from "lucide-react";
+import { Clock, TrendingDown, AlertTriangle } from "lucide-react";
 
 const PainAgitation = () => {
   const painPoints = [
@@ -25,11 +25,11 @@ const PainAgitation = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-red-50 via-orange-50 to-yellow-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             <span className="text-gray-900">The Hidden</span>
             <br />
             <span className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
@@ -38,7 +38,7 @@ const PainAgitation = () => {
             <br />
             <span className="text-gray-900">of DIY Video Editing</span>
           </h2>
-          <p className="text-2xl font-semibold text-gray-700 mb-8">
+          <p className="text-xl font-semibold text-gray-700 mb-8">
             Why "Cheap" Freelancers Are Actually the Most Expensive Option
           </p>
         </div>
@@ -52,7 +52,7 @@ const PainAgitation = () => {
             Every week, you're caught in the same exhausting cycle:
           </p>
           
-          <ul className="space-y-6 text-lg text-gray-700">
+          <ul className="space-y-4 text-lg text-gray-700">
             <li className="flex items-start gap-4">
               <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
               <span className="leading-relaxed">Spending hours "balancing content creation, editing, and managing a channel"</span>

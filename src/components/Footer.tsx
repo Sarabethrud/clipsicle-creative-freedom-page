@@ -1,6 +1,4 @@
 
-import { Play } from "lucide-react";
-
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12 px-4">
@@ -9,9 +7,11 @@ const Footer = () => {
           {/* Logo and brand */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-xl flex items-center justify-center mr-3">
-                <Play className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
+                alt="Clipsicle Logo" 
+                className="w-16 h-16 mr-3"
+              />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
                 Clipsicle
               </h3>

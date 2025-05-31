@@ -33,8 +33,18 @@ const ValueProposition = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Section header */}
+        {/* Section header with logo */}
         <div className="text-center mb-16">
+          <div className="flex items-center justify-center mb-8">
+            <img 
+              src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
+              alt="Clipsicle Logo" 
+              className="w-16 h-16 mr-3"
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              Clipsicle
+            </span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="text-gray-900">Introducing</span>
             <br />
@@ -87,7 +97,12 @@ const ValueProposition = () => {
             Not Just Editing. A Complete Content Engine.
           </h3>
           <div className="inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-0.5 rounded-full">
-            <div className="bg-white px-8 py-3 rounded-full">
+            <div className="bg-white px-8 py-3 rounded-full flex items-center justify-center gap-3">
+              <img 
+                src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
+                alt="Clipsicle Logo" 
+                className="w-6 h-6"
+              />
               <p className="text-lg font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 www.clipsicle.com
               </p>

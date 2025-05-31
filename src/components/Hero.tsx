@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Play, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,9 +16,11 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         {/* Logo/Brand */}
         <div className="flex items-center justify-center mb-12">
-          <div className="w-16 h-16 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
-            <Play className="w-8 h-8 text-white" />
-          </div>
+          <img 
+            src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
+            alt="Clipsicle Logo" 
+            className="w-24 h-24 mr-4"
+          />
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
             Clipsicle
           </h1>

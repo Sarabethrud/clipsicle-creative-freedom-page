@@ -26,18 +26,25 @@ const Hero = () => {
         
         {/* Main headline */}
         <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-gray-900">How Business Owners Can</span>
+          <span className="text-gray-900">Stop Being a Video Editor.</span>
           <br />
           <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            SAVE $100K+ YEARLY
+            Start Being a CEO Again.
           </span>
-          <br />
-          <span className="text-gray-900">ON THEIR CONTENT</span>
         </h2>
         
-        {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
-          Unlimited video editing. Unstoppable growth. Fixed pricing with no subscriptions.
+        {/* Sub-headline */}
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+          Reclaim 15+ Hours Weekly With Our "Done-For-You" Video Engine
+        </h3>
+        
+        {/* Supporting copy */}
+        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+          Predictable Creative Output at Scale — Without the Headaches, Hidden Costs, or Quality Gambles
+        </p>
+        
+        <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+          Tired of "vetting through dozens of editors" only to get "wildly unpredictable results"? Join 500+ creators and businesses who've discovered the secret to scaling content without scaling stress.
         </p>
         
         {/* CTA Buttons */}
@@ -46,14 +53,14 @@ const Hero = () => {
             size="lg" 
             className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
-            Start Creating Now
+            Get Your First Video Back in 48 Hours
           </Button>
           <Button 
             variant="outline" 
             size="lg"
             className="border-2 border-gray-300 hover:border-purple-400 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
           >
-            View Portfolio
+            See Our Work First
           </Button>
         </div>
         

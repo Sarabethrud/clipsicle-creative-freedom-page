@@ -17,7 +17,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Unlimited video editing that transforms your content strategy. Save $100K+ yearly with our fixed pricing model.
+              Your reliable video editing partner for sustainable content growth.
             </p>
             <div className="inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-0.5 rounded-full">
               <div className="bg-gray-900 px-6 py-2 rounded-full">
@@ -28,25 +28,24 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Services */}
+          {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Video Editing</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Content Strategy</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Social Media</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Portfolio</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">View Portfolio (Proof Elements)</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Client Success Stories</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Service Level Agreement</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">30-Day Guarantee Details</a></li>
             </ul>
           </div>
           
-          {/* Support */}
+          {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Support</h4>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a></li>
+              <li>Direct communication channel included with all plans</li>
+              <li>Response time: Under 24 hours</li>
+              <li>Emergency rush support available</li>
             </ul>
           </div>
         </div>

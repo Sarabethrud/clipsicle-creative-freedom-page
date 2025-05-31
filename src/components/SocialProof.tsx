@@ -5,36 +5,36 @@ import { ArrowUp, Play } from "lucide-react";
 const SocialProof = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "E-commerce CEO",
-      company: "StyleCraft",
-      content: "Clipsicle transformed our social media presence. Our engagement increased by 340% in just 3 months, and our sales conversion rate doubled!",
-      metric: "+340% Engagement",
-      avatar: "SJ"
+      name: "DoctorClimax",
+      role: "Content Creator",
+      company: "",
+      content: "It's been a game changer outsourcing video editing... I'm able to upload 3-5 times per week now, whereas before I was lucky to publish twice a week.",
+      metric: "3-5x Weekly Output",
+      avatar: "DC"
     },
     {
-      name: "Marcus Chen", 
-      role: "Marketing Director",
-      company: "TechFlow",
-      content: "The stress relief is incredible. No more scrambling for content or managing freelancers. Clipsicle delivers consistently amazing videos that our audience loves.",
-      metric: "+280% Reach",
-      avatar: "MC"
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Brand Manager", 
+      name: "Emily Rodriguez", 
+      role: "Brand Manager",
       company: "FreshFit",
       content: "We've saved over $120K annually by switching to Clipsicle. The quality is better than our previous agency, and the turnaround time is lightning fast.",
       metric: "$120K+ Saved",
       avatar: "ER"
+    },
+    {
+      name: "Marcus Chen",
+      role: "Marketing Director", 
+      company: "TechFlow",
+      content: "The stress relief is incredible. No more scrambling for content or managing freelancers. Clipsicle delivers consistently amazing videos that our audience loves.",
+      metric: "Zero Stress",
+      avatar: "MC"
     }
   ];
 
   const stats = [
-    { number: "500+", label: "Happy Clients" },
-    { number: "50K+", label: "Videos Created" },
-    { number: "98%", label: "Client Satisfaction" },
-    { number: "24hr", label: "Average Turnaround" }
+    { number: "500+", label: "Happy Clients", description: "who've escaped the editing trap" },
+    { number: "50K+", label: "Videos Created", description: "with broadcast-quality standards" },
+    { number: "98%", label: "Client Satisfaction", description: "(because quality is non-negotiable)" },
+    { number: "48hr", label: "Average Turnaround", description: "(faster than most freelancers)" }
   ];
 
   return (
@@ -49,8 +49,8 @@ const SocialProof = () => {
               Real Businesses
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Join hundreds of business owners who've transformed their content strategy with Clipsicle
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Why 500+ Companies Choose Clipsicle Over $2K+ Agencies and Unpredictable Freelancers
           </p>
         </div>
 
@@ -61,8 +61,11 @@ const SocialProof = () => {
               <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-600 font-medium">
+              <div className="text-gray-800 font-semibold mb-1">
                 {stat.label}
+              </div>
+              <div className="text-sm text-gray-600">
+                {stat.description}
               </div>
             </div>
           ))}
@@ -91,7 +94,9 @@ const SocialProof = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-gray-600 text-sm">{testimonial.role}, {testimonial.company}</div>
+                    <div className="text-gray-600 text-sm">
+                      {testimonial.role}{testimonial.company && `, ${testimonial.company}`}
+                    </div>
                   </div>
                 </div>
               </CardContent>

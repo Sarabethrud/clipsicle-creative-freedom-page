@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Play } from "lucide-react";
+import { Play, Clock, Shield, RotateCcw } from "lucide-react";
 import { useState } from "react";
 
 const CallToAction = () => {
@@ -14,6 +14,12 @@ const CallToAction = () => {
     console.log("Form submitted:", { name, email });
     // Here you would typically send the data to your backend
   };
+
+  const steps = [
+    "Choose your plan and submit your first video",
+    "Get your first professionally edited video back in 48 hours", 
+    "Experience the relief of never worrying about editing again"
+  ];
 
   return (
     <section className="py-20 px-4 relative overflow-hidden">
@@ -30,42 +36,42 @@ const CallToAction = () => {
           {/* Left side - CTA Content */}
           <div className="text-white">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Ready to Start Creating?
+              Ready to Transform Your Content Strategy?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Join 500+ business owners who've transformed their content strategy with Clipsicle.
+              Join the 500+ business owners who've discovered the freedom of unlimited, professional video editing.
             </p>
             
-            <div className="space-y-6 mb-8">
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                  <Play className="w-4 h-4 text-white" />
-                </div>
-                <span className="text-lg">Get your first video back in 48 hours</span>
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold mb-6">What happens next:</h3>
+              <div className="space-y-4">
+                {steps.map((step, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold">{index + 1}</span>
+                    </div>
+                    <span className="text-lg">{step}</span>
+                  </div>
+                ))}
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                  <Play className="w-4 h-4 text-white" />
-                </div>
-                <span className="text-lg">30-day money-back guarantee</span>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
+              <div className="flex items-center gap-3 mb-2">
+                <Clock className="w-5 h-5 text-white" />
+                <span className="font-semibold">⏰ Your competitors are scaling their content while you're stuck editing.</span>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                  <Play className="w-4 h-4 text-white" />
-                </div>
-                <span className="text-lg">Cancel anytime, no contracts</span>
-              </div>
+              <p className="text-white/80">
+                Every day you wait is another day behind.
+              </p>
             </div>
             
             <Button 
               size="lg" 
               className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4"
             >
-              View Our Portfolio
+              Start Your Risk-Free Trial
             </Button>
-            <p className="text-white/80 text-sm">
-              See examples of our work before you commit
-            </p>
           </div>
           
           {/* Right side - Form */}
@@ -111,8 +117,30 @@ const CallToAction = () => {
                   size="lg" 
                   className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
-                  Get Started Now
+                  Start Your Risk-Free Trial
                 </Button>
+                
+                {/* Trust indicators */}
+                <div className="space-y-3 text-center">
+                  <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-green-500" />
+                      <span>Get your first video back in 48 hours</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Shield className="w-4 h-4 text-green-500" />
+                      <span>30-day money-back guarantee</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <RotateCcw className="w-4 h-4 text-green-500" />
+                      <span>Cancel anytime</span>
+                    </div>
+                  </div>
+                </div>
                 
                 <p className="text-sm text-gray-500 text-center">
                   By signing up, you agree to our Terms of Service and Privacy Policy. 

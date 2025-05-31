@@ -81,7 +81,7 @@ const RiskReversal = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="text-gray-900">Choose Your Video</span>
             <br />
             <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
@@ -102,14 +102,14 @@ const RiskReversal = () => {
               
               <CardContent className={`p-8 ${tier.popular ? 'pt-12' : ''}`}>
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {tier.name}
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-8 leading-relaxed">
                     {tier.description}
                   </p>
                   
-                  <div className="flex items-baseline justify-center mb-6">
+                  <div className="flex items-baseline justify-center mb-8">
                     <span className="text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                       {tier.price}
                     </span>
@@ -118,22 +118,22 @@ const RiskReversal = () => {
                 </div>
 
                 <div className="mb-8">
-                  <h4 className="font-semibold text-gray-900 mb-4">Guaranteed Minimums:</h4>
-                  <ul className="space-y-3">
+                  <h4 className="font-semibold text-gray-900 mb-6">Guaranteed Minimums:</h4>
+                  <ul className="space-y-4">
                     {tier.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-3">
                         <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                           <Check className="w-3 h-3 text-white" />
                         </div>
-                        <span className="text-gray-700 text-sm">{feature}</span>
+                        <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 <div className="mb-8">
-                  <p className="text-sm font-semibold text-gray-900 mb-2">Best for:</p>
-                  <p className="text-sm text-gray-600">{tier.bestFor}</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-3">Best for:</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">{tier.bestFor}</p>
                 </div>
                 
                 <Button 
@@ -152,15 +152,15 @@ const RiskReversal = () => {
 
         {/* Risk reversal guarantees */}
         <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
               <span className="text-gray-900">Zero Risk,</span>
               <br />
               <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 Maximum Reward
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
               We're so confident you'll love Clipsicle that we've removed all the risk. Try us completely risk-free.
             </p>
           </div>
@@ -169,8 +169,8 @@ const RiskReversal = () => {
             {guarantees.map((guarantee, index) => (
               <Card key={index} className="relative overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-8 text-center">
-                  <div className="text-6xl mb-6">{guarantee.icon}</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  <div className="text-6xl mb-8">{guarantee.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-6">
                     {guarantee.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -185,7 +185,7 @@ const RiskReversal = () => {
 
         {/* Bottom trust statement */}
         <div className="text-center bg-white/80 backdrop-blur-sm rounded-3xl p-8">
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 leading-relaxed">
             Why can we offer this? Because our clients typically see results within the first week. When you experience the relief of never worrying about video editing again, you'll understand why our retention rate is 94%.
           </p>
         </div>

@@ -35,23 +35,23 @@ const ValueProposition = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="text-gray-900">Introducing</span>
             <br />
             <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               "Predictable Creative Output at Scale"
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             The Reliable Video Partner That Grows Your Brand While You Focus on What You Do Best
           </p>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             What if you could "scale up your content output without getting bogged down" in editing? What if video production felt effortless instead of overwhelming?
           </p>
         </div>
 
         {/* Missing 1% Formula header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h3 className="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent mb-4">
             Our "Missing 1%" Formula:
           </h3>
@@ -67,7 +67,7 @@ const ValueProposition = () => {
                     {feature.icon}
                   </div>
                 </div>
-                <h3 className={`text-xl font-bold mb-4 bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}>
+                <h3 className={`text-xl font-bold mb-6 bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}>
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
@@ -83,7 +83,7 @@ const ValueProposition = () => {
 
         {/* Bottom CTA */}
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+          <h3 className="text-3xl font-bold text-gray-900 mb-6">
             Not Just Editing. A Complete Content Engine.
           </h3>
           <div className="inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-0.5 rounded-full">

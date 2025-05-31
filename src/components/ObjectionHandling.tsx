@@ -49,15 +49,15 @@ const ObjectionHandling = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
               "But What Does 'Unlimited' Really Mean?"
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed">
             The Transparent Truth About Our Service (No Fine Print BS)
           </p>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             We get it. You've been burned by "unlimited" promises before. Here's exactly what you get:
           </p>
         </div>
@@ -72,8 +72,8 @@ const ObjectionHandling = () => {
                     <Check className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-2">{feature.title}</h3>
-                    <p className="text-gray-600 text-sm">{feature.description}</p>
+                    <h3 className="font-bold text-gray-900 mb-3">{feature.title}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               </CardContent>
@@ -86,7 +86,7 @@ const ObjectionHandling = () => {
           {/* What's included */}
           <Card className="bg-white/90 backdrop-blur-sm border-2 border-green-200 shadow-xl">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
                 What's Included Every Month:
               </h3>
               <ul className="space-y-4">
@@ -95,7 +95,7 @@ const ObjectionHandling = () => {
                     <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check className="w-4 h-4 text-white" />
                     </div>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-700 leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -105,7 +105,7 @@ const ObjectionHandling = () => {
           {/* What's not included */}
           <Card className="bg-white/90 backdrop-blur-sm border-2 border-red-200 shadow-xl">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
                 What's NOT Included:
               </h3>
               <ul className="space-y-4">
@@ -114,7 +114,7 @@ const ObjectionHandling = () => {
                     <div className="w-6 h-6 bg-gradient-to-r from-red-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <X className="w-4 h-4 text-white" />
                     </div>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-700 leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -126,10 +126,10 @@ const ObjectionHandling = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 p-0.5 rounded-3xl max-w-4xl mx-auto">
             <div className="bg-white rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Clear expectations = Happy clients = Long-term partnerships
               </h3>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 No surprises, no hidden fees, no gotchas. Just transparent, professional video editing that scales with your business.
               </p>
             </div>

@@ -35,33 +35,33 @@ const CallToAction = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - CTA Content */}
           <div className="text-white">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
               Ready to Transform Your Content Strategy?
             </h2>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
+            <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
               Join the 500+ business owners who've discovered the freedom of unlimited, professional video editing.
             </p>
             
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-6">What happens next:</h3>
-              <div className="space-y-4">
+              <h3 className="text-2xl font-bold mb-8">What happens next:</h3>
+              <div className="space-y-6">
                 {steps.map((step, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold">{index + 1}</span>
                     </div>
-                    <span className="text-lg">{step}</span>
+                    <span className="text-lg leading-relaxed">{step}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
-              <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center gap-3 mb-3">
                 <Clock className="w-5 h-5 text-white" />
                 <span className="font-semibold">⏰ Your competitors are scaling their content while you're stuck editing.</span>
               </div>
-              <p className="text-white/80">
+              <p className="text-white/80 leading-relaxed">
                 Every day you wait is another day behind.
               </p>
             </div>
@@ -78,13 +78,13 @@ const CallToAction = () => {
           <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-2xl">
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Play className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Get Started
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 leading-relaxed">
                   Ready to transform your content? Let's begin your journey.
                 </p>
               </div>
@@ -121,7 +121,7 @@ const CallToAction = () => {
                 </Button>
                 
                 {/* Trust indicators */}
-                <div className="space-y-3 text-center">
+                <div className="space-y-4 text-center">
                   <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-green-500" />
@@ -142,7 +142,7 @@ const CallToAction = () => {
                   </div>
                 </div>
                 
-                <p className="text-sm text-gray-500 text-center">
+                <p className="text-sm text-gray-500 text-center leading-relaxed">
                   By signing up, you agree to our Terms of Service and Privacy Policy. 
                   No spam, unsubscribe at any time.
                 </p>

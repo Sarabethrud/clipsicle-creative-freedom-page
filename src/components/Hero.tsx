@@ -15,7 +15,7 @@ const Hero = () => {
       
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         {/* Logo/Brand */}
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex items-center justify-center mb-12">
           <div className="w-16 h-16 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
             <Play className="w-8 h-8 text-white" />
           </div>
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         
         {/* Main headline */}
-        <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
           <span className="text-gray-900">Stop Being a Video Editor.</span>
           <br />
           <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
@@ -34,16 +34,16 @@ const Hero = () => {
         </h2>
         
         {/* Sub-headline */}
-        <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
           Reclaim 15+ Hours Weekly With Our "Done-For-You" Video Engine
         </h3>
         
         {/* Supporting copy */}
-        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
           Predictable Creative Output at Scale — Without the Headaches, Hidden Costs, or Quality Gambles
         </p>
         
-        <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
           Tired of "vetting through dozens of editors" only to get "wildly unpredictable results"? Join 500+ creators and businesses who've discovered the secret to scaling content without scaling stress.
         </p>
         

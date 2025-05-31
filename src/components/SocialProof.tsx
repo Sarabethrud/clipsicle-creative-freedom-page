@@ -42,14 +42,14 @@ const SocialProof = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="text-gray-900">Real Results From</span>
             <br />
             <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Real Businesses
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Why 500+ Companies Choose Clipsicle Over $2K+ Agencies and Unpredictable Freelancers
           </p>
         </div>
@@ -58,13 +58,13 @@ const SocialProof = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent mb-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent mb-3">
                 {stat.number}
               </div>
-              <div className="text-gray-800 font-semibold mb-1">
+              <div className="text-gray-800 font-semibold mb-2">
                 {stat.label}
               </div>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-gray-600 leading-relaxed">
                 {stat.description}
               </div>
             </div>
@@ -77,13 +77,13 @@ const SocialProof = () => {
             <Card key={index} className="relative overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-white/90 backdrop-blur-sm">
               <CardContent className="p-8">
                 {/* Metric badge */}
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-400 to-emerald-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-400 to-emerald-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-8">
                   <ArrowUp className="w-4 h-4" />
                   {testimonial.metric}
                 </div>
                 
                 {/* Quote */}
-                <blockquote className="text-gray-700 mb-6 leading-relaxed text-lg">
+                <blockquote className="text-gray-700 mb-8 leading-relaxed text-lg">
                   "{testimonial.content}"
                 </blockquote>
                 

@@ -46,7 +46,7 @@ const PricingComparison = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="text-gray-900">Why Smart Businesses Pay</span>
             <br />
             <span className="bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">
@@ -59,7 +59,7 @@ const PricingComparison = () => {
 
         {/* Math comparison */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-12">
             Here's the math that'll shock you:
           </h3>
           
@@ -67,24 +67,24 @@ const PricingComparison = () => {
             {comparisons.map((comparison, index) => (
               <Card key={index} className={`relative overflow-hidden border-2 ${comparison.color === 'green' ? 'border-green-300 bg-green-50' : 'border-gray-200 bg-white'} hover:shadow-lg transition-all duration-300`}>
                 <CardContent className="p-6 text-center">
-                  <div className="mb-4 flex justify-center">
+                  <div className="mb-6 flex justify-center">
                     {comparison.icon}
                   </div>
                   
-                  <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  <h4 className="text-lg font-bold text-gray-900 mb-4">
                     {comparison.option}
                   </h4>
                   
-                  <div className={`text-2xl font-bold mb-3 ${comparison.color === 'green' ? 'text-green-600' : 'text-red-600'}`}>
+                  <div className={`text-2xl font-bold mb-4 ${comparison.color === 'green' ? 'text-green-600' : 'text-red-600'}`}>
                     {comparison.cost}
                   </div>
                   
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     {comparison.details}
                   </p>
                   
                   {comparison.color === 'green' && (
-                    <div className="mt-4 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
+                    <div className="mt-6 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
                       BEST VALUE
                     </div>
                   )}
@@ -108,14 +108,14 @@ const PricingComparison = () => {
                     <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center flex-shrink-0">
                       <DollarSign className="w-3 h-3 text-white" />
                     </div>
-                    <span className="text-gray-700 font-medium">{benefit}</span>
+                    <span className="text-gray-700 font-medium leading-relaxed">{benefit}</span>
                   </div>
                 ))}
               </div>
               
               <div className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-0.5 rounded-2xl">
-                <div className="bg-white rounded-2xl p-6">
-                  <p className="text-xl font-bold text-gray-900">
+                <div className="bg-white rounded-2xl p-8">
+                  <p className="text-xl font-bold text-gray-900 leading-relaxed">
                     The question isn't "Can I afford Clipsicle?" 
                     <br />
                     It's "Can I afford NOT to have reliable video production?"

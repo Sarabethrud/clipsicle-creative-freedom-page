@@ -39,7 +39,8 @@ const ValueProposition = () => {
             <img 
               src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
               alt="Clipsicle Logo" 
-              className="w-16 h-16 mr-3"
+              className="w-8 h-8 mr-3 object-contain"
+              style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Clipsicle
@@ -101,7 +102,8 @@ const ValueProposition = () => {
               <img 
                 src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
                 alt="Clipsicle Logo" 
-                className="w-6 h-6"
+                className="w-5 h-5 object-contain"
+                style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
               />
               <p className="text-lg font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 www.clipsicle.com

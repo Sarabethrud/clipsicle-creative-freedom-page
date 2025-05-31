@@ -10,7 +10,8 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/67201d27-def6-4b6c-a2a5-a890b5f5cc5d.png" 
                 alt="Clipsicle Logo" 
-                className="w-16 h-16 mr-3"
+                className="w-8 h-8 mr-3 object-contain"
+                style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
               />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
                 Clipsicle
